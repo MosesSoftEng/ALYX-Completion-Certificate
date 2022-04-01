@@ -9,14 +9,22 @@
             text-align: center;
         }
 
+        div {
+            border: 8px dashed grey;
+            padding: 32px;
+        }
+
         button, input {
             height: 64px;
             font-size: 32px;
             padding: 12px 24px 24px 24px;
-            background-color: greenyellow;
             outline: none;
             border: none;
             border-radius: 16px;
+        }
+
+        button {
+            background-color: greenyellow;
         }
 
         h1 {
@@ -34,27 +42,29 @@
 
 
 <body>
-    <h6>Program completion crtitficate</h6>
-    <h1>Your Program Cert is ready!</h1>
-
-    <p>Fill the information below to download!</p>
-
-
-    <div method="get" action="https://mosessofteng.github.io/ALYX-Completion-Certificate/aylx-certificate.pdf">
-        <label>
-            Name as you want them to appear in Cert.
+    <div>
+        <h6>Program completion crtitficate</h6>
+        <h1>Your Program Cert is ready!</h1>
+    
+        <p>Fill the information below to download!</p>
+    
+    
+        <div method="get" action="https://mosessofteng.github.io/ALYX-Completion-Certificate/aylx-certificate.pdf">
+            <label>
+                Name as you want them to appear in Cert.
+                <br>
+                <input type="text" required>
+            </label>
+    
             <br>
-            <input type="text" required>
-        </label>
-
-        <br>
-
-        <a href="https://mosessofteng.github.io/ALYX-Completion-Certificate/aylx-certificate.pdf" download>
-            <button onclick="getCert()" type="submit">submit and download Cert.</button>
-        </a>
-
-        
-    </form>
+    
+            <a href="https://mosessofteng.github.io/ALYX-Completion-Certificate/aylx-certificate.pdf" download>
+                <button onclick="getCert()" type="submit">submit and download Cert.</button>
+            </a>
+    
+            
+        </form>
+    </div>
 
     <script>
         function getCert() {
