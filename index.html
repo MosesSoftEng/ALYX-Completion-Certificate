@@ -4,7 +4,7 @@
     <style>
         body  {
             background-color: beige;
-            font-family: Verdana, sans-serif;
+            font-family: Lora, serif;
             font-size: 24px;
             text-align: center;
         }
@@ -17,7 +17,6 @@
         button, input {
             height: 64px;
             font-size: 32px;
-            padding: 12px 24px 24px 24px;
             outline: none;
             border: none;
             border-radius: 16px;
@@ -25,16 +24,17 @@
 
         button {
             background-color: greenyellow;
+            padding: 12px 24px 24px 24px;
         }
 
         h1 {
-            font-family: Georgia, serif;
+            font-family: Ubuntu, sans-serif;
             font-size: 64px;  
         }
 
         h2 {
-            font-family: Georgia, serif;
-            font-size: 32px;  
+            font-family: Ubuntu, sans-serif;
+            font-size: 48px;  
         }
     </style>
 
@@ -43,13 +43,13 @@
 
 <body>
     <div>
-        <h6>Program completion crtitficate</h6>
+        <h6>Program completion certitficate.</h6>
         <h1>Your Program Cert is ready!</h1>
     
         <p>Fill the information below to download!</p>
     
     
-        <div method="get" action="https://mosessofteng.github.io/ALYX-Completion-Certificate/aylx-certificate.pdf">
+        <form method="get" action="https://mosessofteng.github.io/ALYX-Completion-Certificate/aylx-certificate.pdf">
             <label>
                 Name as you want them to appear in Cert.
                 <br>
@@ -57,12 +57,11 @@
             </label>
     
             <br>
+            <br>
     
-            <a href="https://mosessofteng.github.io/ALYX-Completion-Certificate/aylx-certificate.pdf" download>
+            <!-- <a href="https://mosessofteng.github.io/ALYX-Completion-Certificate/aylx-certificate.pdf" download> -->
                 <button onclick="getCert()" type="submit">submit and download Cert.</button>
-            </a>
-    
-            
+            <!-- </a> -->
         </form>
     </div>
 
